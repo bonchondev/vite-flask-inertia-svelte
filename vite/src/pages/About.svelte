@@ -10,9 +10,7 @@
 
 <section class="p-2 text-red-500">
     {name} - {amount} |
-    {#await response}
-        <span></span>
-    {:then resp}
+    {#await response then resp}
         <span>{resp.dollars}</span>
     {:catch error}
         <span>Error: {error.message}</span>
