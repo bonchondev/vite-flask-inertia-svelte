@@ -1,0 +1,2 @@
+import{S as d,d as m,e as f,h as n,q as h,k as o,l as u,m as l,o as r,p as x}from"../main.js";function v(p){let e,t,i,a;return{c(){e=n("div"),t=n("h1"),t.textContent=`What a ${S} app!`,i=h(),a=n("p"),a.innerHTML=`For more information please visit the
+        <a href="https://flask-inertia.readthedocs.io/">documentation</a>`,o(t,"class","text-red-500"),o(a,"class","font-bold"),o(e,"class","p-2")},m(s,c){u(s,e,c),l(e,t),l(e,i),l(e,a)},p:r,i:r,o:r,d(s){s&&x(e)}}}let S="Svelte";class k extends d{constructor(e){super(),m(this,e,null,v,f,{})}}export{k as default};

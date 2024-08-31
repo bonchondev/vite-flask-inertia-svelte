@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Layout from "../Layout.svelte";
     let name = "Svelte";
 </script>
 
