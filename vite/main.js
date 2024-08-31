@@ -1,6 +1,6 @@
 //@ts-ignore
-import { createInertiaApp } from '@inertiajs/svelte'
-import "./app.css"
+import { createInertiaApp } from "@inertiajs/svelte";
+import "./app.css";
 
 function importPageComponent(name, pages) {
   // eslint-disable-next-line no-restricted-syntax
@@ -19,6 +19,6 @@ createInertiaApp({
     importPageComponent(name, import.meta.glob("./src/**/*.svelte")),
   //@ts-ignore
   setup({ el, App, props }) {
-    new App({ target: el, props })
+    new App({ target: el, props });
   },
-})
+});
