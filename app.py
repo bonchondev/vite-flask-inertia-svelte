@@ -14,7 +14,7 @@ def create_app() -> Flask:
 
     app.config["INERTIA_TEMPLATE"] = "base.html"
     app.config["SECRET_KEY"] = "changeme"
-    app.config["VITE_AUTO_INSERT"] = True
+    app.config["VITE_AUTO_INSERT"] = app.debug
     app.config["VITE_NPM_BIN_PATH"] = "pnpm"
 
     Inertia(app)
