@@ -1,27 +1,6 @@
-from config import PUBLIC_FOLDER, STATIC_FOLDER, TEMPLATES
-from flask import Flask, send_from_directory
-from flask_inertia import Inertia, render_inertia
-from flask_vite import Vite
-
-
-def create_app() -> Flask:
-
-    app = Flask(
-        __name__,
-        template_folder=TEMPLATES,
-        static_folder=STATIC_FOLDER,
-    )
-
-    app.config["INERTIA_TEMPLATE"] = "base.html"
-    app.config["SECRET_KEY"] = "changeme"
-    app.config["VITE_AUTO_INSERT"] = app.debug
-    app.config["VITE_NPM_BIN_PATH"] = "pnpm"
-
-    Inertia(app)
-
-    Vite(app)
-
-    return app
+from config import PUBLIC_FOLDER, STATIC_FOLDER
+from flask import send_from_directory
+from flask_inertia import render_inertia
 
 
 app = create_app()
