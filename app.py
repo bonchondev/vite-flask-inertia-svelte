@@ -1,4 +1,4 @@
-from config import PUBLIC_FOLDER, STATIC_FOLDER
+from config import PUBLIC_FOLDER, STATIC_FOLDER, create_app
 from flask import send_from_directory
 from flask_inertia import render_inertia
 
