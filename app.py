@@ -27,8 +27,8 @@ def static_folder(path):
 
 
 @app.get("/favicon.ico")
-def public_folder(path):
-    return send_from_directory(PUBLIC_FOLDER, path)
+def public_folder():
+    return send_from_directory(PUBLIC_FOLDER, "favicon.ico")
 
 
 if __name__ == "__main__":
