@@ -15,7 +15,7 @@
 <section class="p-2 text-red-500">
     {name} - {amount} |
     {#if $query.isSuccess}
-        <span>{$query.data?.dollars}</span>
+        <span>{$query.data.dollars}</span>
     {:else if $query.isError}
         <span>Error: {$query.error}</span>
     {/if}
