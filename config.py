@@ -25,6 +25,7 @@ def create_app() -> Flask:
     app.config["SECRET_KEY"] = "changeme"
     app.config["VITE_AUTO_INSERT"] = app.debug
     app.config["VITE_NPM_BIN_PATH"] = "pnpm"
+    app.config["VITE_FOLDER_PATH"] = "views"
 
     Inertia(app)
 
